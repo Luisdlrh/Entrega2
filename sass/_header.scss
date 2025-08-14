@@ -1,0 +1,69 @@
+@use "variables" as v;
+
+/* HEADER */
+
+
+header{
+.logocentrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 250px; 
+    animation: rebote 2s infinite;
+}
+
+nav {
+    font-family: v.$fuente-nav;
+    font-size: medium;
+} 
+
+.navegacion {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    height: auto;
+    width: auto;
+    font-size: larger;
+}
+
+.paginaactual {
+    color: v.$color-paginaactual;
+}
+
+
+@keyframes rebote {
+    0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    }
+    40% {
+    transform: translateY(-20px); 
+    }
+    60% {
+    transform: translateY(-20px); 
+    }
+}
+
+
+
+
+
+@include v.mobile{
+height: auto;
+h1{
+    display: none;
+}
+.navegacion{
+    padding: 10px;
+}
+}
+}

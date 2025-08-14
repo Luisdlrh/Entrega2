@@ -1,0 +1,66 @@
+@use "variables" as v;
+@use "nosotros";
+@use "tienda";
+@use "home";
+@use "header";
+@use "galeria";
+@use "footer";
+@use "contacto";
+
+
+
+// fuente de letra
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Yoster';
+    src: url('../Images/yoster.ttf');
+}
+@font-face {
+    font-family: 'Super Sunkissed';
+    src: url('../images/kgperfect.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bellavoir';
+    src: url('../images/Bellavoir.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p, h2, h3 {
+    font-family: v.$fuente-parrafos;
+}
+
+
+
+h2, h3 {
+    text-align: center;
+}
+
+
+body{
+    background-image: url('../images/bg2.jpg'); 
+    background-size: cover;        
+    background-repeat: no-repeat;  
+    background-position: center;   
+    margin: 0;
+    
+}
+
+// variables para todo
+p {color: v.$color-p;}
+h1 {color: v.$color-h1; font-family: v.$fuente-principal;}
+h2 {color: v.$color-h2;}
+h3 {color: v.$color-h3;}
+li {list-style: none; margin-bottom: 10px;}
+a {text-decoration: none;}
+
+.tituloindex {
+    display: flex;
+    color: v.$color-tituloindex;
+    align-items: center;
+    justify-content: center;
+    font-size: v.$tamano-tituloindex;
+}

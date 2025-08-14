@@ -1,0 +1,47 @@
+@use "variables" as v;
+
+.titulosn {
+    text-align: center;
+}
+
+.equipotrabajo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 10px;  
+    font-family: v.$fuente-parrafos            
+}
+
+
+.imgequipo {
+    width: 20vw;
+    height: auto;
+    transition: transform 0.3s ease; 
+
+    &:hover {
+        transform: scale(1.40); 
+    }
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.seccionnosotros {
+    padding: 0 40px; 
+    margin-bottom: 20px;
+
+    p {
+    margin-bottom: 15px; 
+    line-height: 1.5;
+    text-align: center;
+    }
+
+    strong {
+    color: blueviolet;
+    }
+}

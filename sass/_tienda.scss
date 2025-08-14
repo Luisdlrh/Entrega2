@@ -1,0 +1,31 @@
+@use "variables" as v;
+
+// aqui le decimos q aplique este esfecto a todos los col-3 que esnte ne row
+.row .col-3 { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.row .col-3 img {
+    width: 250px;      
+    height: 250px;    
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+
+.row .col-3 button {
+    width: 100px; 
+}
+
+.secciontienda {
+    padding: 0 20px; 
+
+    p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: center;
+    }
+}
+

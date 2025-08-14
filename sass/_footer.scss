@@ -1,0 +1,21 @@
+@use "variables" as v;
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+/*Derechos reservados*/
+.dr{color: v.$color-paginaactual; font-size: large; font-family: yoster ;}
+
+
+.redsocial{
+    margin: 0 10px;
+}
+
+.gallery{width: 20vw;height: auto;}

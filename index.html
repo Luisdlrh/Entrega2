@@ -16,10 +16,11 @@
 <body>
 
 
-    <header class="logocentrado">
+    <header>
     <!-- Aqui colocaremos logo, titulo y barra de navegacion -->
 
     <!-- colocar imagen, en este caso tiene 2 propiedades, src: ruta de imagen, alt: comentario sobre la imagen, nosotros le agregamos title -->
+    <div class="logocentrado">
     <a href="./index.html">
         <img src="./images/Logo1.png" alt="Logo LD" title="Logo" class="logo">
     </a>
@@ -28,7 +29,7 @@
     <!-- Etiquetas para la muestra usamos h1 a h6, h1 solo se usa una vez por archivo 
     no nos podemos salta de h2 a h6, debe ser en orden-->
         <h1>LD project</h1>
-
+    </div>
     <!-- Esta etiqeuca nos permite navegar atravez de nuestras paginas - debe ser una lista para nuestro projecto -->
         
     <nav>
@@ -67,23 +68,30 @@
         <section class="juegosindex">
             <article>
                 <h3>Recomendado del mes - Death stranding</h3>
+                <div class="contenedorimgind" onclick="this.classList.toggle('activo')">
                 <img src="./images/DT.jpg" alt="DT1" class="imginicio">
-                <p class="imgdt descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a molestiae. Ipsum accusantium aperiam ea assumenda obcaecati, totam laudantium iusto suscipit quo similique hic blanditiis nihil dolores. Quaerat, eligendi eos?
+                <p class="imgdt descripcion">Death Stranding es nuestra recomendación del mes por su experiencia única que combina exploración, narrativa profunda y una atmósfera visual impresionante. Sumérgete en un mundo postapocalíptico donde cada paso cuenta y descubre una historia que te atrapará de principio a fin.
                 </p>
+                </div>
+                
             </article>
 
             <article>
                 <h3>Juego del año 2024</h3>
+                <div class="contenedorimgind" onclick="this.classList.toggle('activo')">
                 <img src="./images/astrobot.avif" alt="AB" class="imginicio">
-                <p class="imgdt descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a molestiae. Ipsum accusantium aperiam ea assumenda obcaecati, totam laudantium iusto suscipit quo similique hic blanditiis nihil dolores. Quaerat, eligendi eos?
+                <p class="imgdt descripcion">Astro Boy se lleva el título del año gracias a su jugabilidad fresca, gráficos vibrantes y una historia que mezcla acción trepidante con momentos emotivos. Una aventura que reinventa un clásico y lo lleva a un nuevo nivel para las nuevas generaciones.
                 </p>
+                </div>
             </article>
 
             <article>
                 <h3>Descubrimiento del dia</h3>
+                <div class="contenedorimgind" onclick="this.classList.toggle('activo')">
                 <img src="./images/nier.jpg" alt="nier" class="imginicio">
-                <p class="imgdt descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a molestiae. Ipsum accusantium aperiam ea assumenda obcaecati, totam laudantium iusto suscipit quo similique hic blanditiis nihil dolores. Quaerat, eligendi eos?
+                <p class="imgdt descripcion">NieR: Automata sorprende con su mezcla de combate dinámico, banda sonora inolvidable y una narrativa profunda que invita a reflexionar. Un título que combina filosofía y acción en un mundo tan bello como desolador.
                 </p>
+                </div>
             </article>
 
         </section>
