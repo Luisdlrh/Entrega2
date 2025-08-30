@@ -36,4 +36,23 @@
     color: v.$color-h1;
 }
 
+.descripciongaleria{
+    text-align: justify;
+}
+
+@include v.mobile {
+
+  .galeriajuegos {
+    text-align: center;
+    .titulojuego {
+      font-size: xx-small;
+    }
+
+    .descripciongaleria {
+      font-size: xx-small;
+      text-align: justify; 
+    }
+  }
+}
+
 

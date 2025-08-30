@@ -52,18 +52,61 @@ nav {
     transform: translateY(-20px); 
     }
 }
-
-
-
-
-
-@include v.mobile{
-height: auto;
-h1{
-    display: none;
 }
-.navegacion{
-    padding: 10px;
+
+
+@include v.mobile {
+  header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+  }
+
+  header .logo {
+    order: 1;
+    margin-bottom: 5px;
+  }
+
+  header .titulo,
+  header .titulocontacto {
+    order: 2;
+    margin-bottom: 10px;
+  }
+
+  nav,
+  header .navegacion {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: static;
+    margin-top: 10px;
+  }
+
+  nav li {
+    list-style: none;
+  }
+
+  nav li a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #000;
+  }
 }
-}
-}
+
+
+
+  .juegosindex article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+
+

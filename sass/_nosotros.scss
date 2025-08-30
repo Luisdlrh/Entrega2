@@ -45,3 +45,12 @@
     color: blueviolet;
     }
 }
+
+@include v.mobile {
+    .mapa iframe {
+        width: 90vw;   // Ocupa el 90% del ancho de la pantalla
+        height: 200px; // Hacemos el mapa más pequeño en altura
+    }
+}
+
+
