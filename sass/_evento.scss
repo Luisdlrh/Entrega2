@@ -1,18 +1,18 @@
 @use "variables" as v;
 
 .card {
-  background-color: rgb(237, 237, 237); 
-  border: 1px solid; 
+    background-color: rgb(237, 237, 237); 
+    border: 1px solid; 
 
-  .card-title {
-    color: blueviolet; 
-  }
+        .card-title {
+            color: blueviolet; 
+    }
 
-  .card-subtitle {
-    color: #555555; 
-  }
+    .card-subtitle {
+        color: #555555; 
+    }
 
-  .card-text, li {
-    color: #333333; 
-  }
+    .card-text, li {
+        color: #333333; 
+    }
 }

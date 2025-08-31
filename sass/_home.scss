@@ -42,7 +42,7 @@ $juegos-margin-top: 20px;
 }
 
 
-@media (max-width: 435px) {
+@include v.mobile {
     .contenedorimgind {
     display: flex;
     flex-direction: column;

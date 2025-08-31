@@ -22,19 +22,34 @@ header{
     animation: rebote 2s infinite;
 }
 
-nav {
-    font-family: v.$fuente-nav;
-    font-size: medium;
-} 
-
 .navegacion {
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    height: auto;
-    width: auto;
-    font-size: larger;
+  
+  display: flex;       
+  justify-content: center;
+  gap: 10px;         
 }
+
+.navegacion li {
+  display: inline-block; 
+  perspective: 600px;
+
+  a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    background: rgb(21, 226, 117);
+    border-radius: 5px;
+    transition: transform 0.5s, background 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  a:hover {
+    transform: rotateY(360deg);
+    background: blueviolet;
+  }
+}
+
 
 .paginaactual {
     color: v.$color-paginaactual;
@@ -76,8 +91,7 @@ nav {
     margin-bottom: 10px;
   }
 
-  nav,
-  header .navegacion {
+  nav, header .navegacion {
     order: 3;
     display: flex;
     justify-content: center;
