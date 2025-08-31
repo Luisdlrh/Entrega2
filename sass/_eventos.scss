@@ -1,0 +1,20 @@
+@use "variables" as v;
+
+.card {
+    background-color: #f0f8ff; // color de fondo de la tarjeta
+    border: 1px solid #1e90ff; // borde azul
+
+    .card-title {
+        color: #1e90ff; // color del título
+    }
+
+    .card-subtitle {
+        color: #555555; // color del subtítulo
+    }
+
+    .card-text, li {
+        color: #333333; // color del texto y lista
+  }
+}
+
+
