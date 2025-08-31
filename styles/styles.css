@@ -46,7 +46,7 @@
   color: blueviolet;
 }
 
-@media (max-width: 435px) {
+@media (max-width: 430px) {
   .mapa iframe {
     width: 90vw;
     height: 200px;
@@ -79,6 +79,19 @@
   text-align: center;
 }
 
+@media (max-width: 430px) {
+  .row .col-3 {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+  .row .col-3 img {
+    width: 150px;
+    height: 150px;
+  }
+  .row .col-3 button {
+    width: 80px;
+  }
+}
 .juegosindex {
   display: flex;
   justify-content: center;
@@ -172,7 +185,7 @@ header .paginaactual {
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 430px) {
   header {
     display: flex;
     flex-direction: column;
@@ -255,7 +268,7 @@ header .paginaactual {
   text-align: justify;
 }
 
-@media (max-width: 435px) {
+@media (max-width: 430px) {
   .galeriajuegos {
     text-align: center;
   }
@@ -331,6 +344,20 @@ footer {
 }
 .faqs p {
   margin-bottom: 1rem;
+}
+
+.card {
+  background-color: rgb(237, 237, 237);
+  border: 1px solid;
+}
+.card .card-title {
+  color: blueviolet;
+}
+.card .card-subtitle {
+  color: #555555;
+}
+.card .card-text, .card li {
+  color: #333333;
 }
 
 @font-face {

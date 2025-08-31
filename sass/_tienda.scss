@@ -29,3 +29,19 @@
     }
 }
 
+
+@include v.mobile {
+    .row .col-3 {
+        flex: 1 1 100%;  
+        margin-bottom: 15px;
+    }
+
+    .row .col-3 img {
+        width: 150px;  
+        height: 150px;
+    }
+
+    .row .col-3 button {
+        width: 80px;
+    }
+}
