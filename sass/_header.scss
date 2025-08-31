@@ -51,8 +51,9 @@ header{
 }
 
 
-.paginaactual {
-    color: v.$color-paginaactual;
+.navegacion li a.paginaactual {
+  background-color: blueviolet; 
+  color: white; 
 }
 
 

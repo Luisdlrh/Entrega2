@@ -197,8 +197,9 @@ header .navegacion li a:hover {
   transform: rotateY(360deg);
   background: blueviolet;
 }
-header .paginaactual {
-  color: rgb(21, 226, 117);
+header .navegacion li a.paginaactual {
+  background-color: blueviolet;
+  color: white;
 }
 @keyframes rebote {
   0%, 20%, 50%, 80%, 100% {
